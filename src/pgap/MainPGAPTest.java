@@ -90,7 +90,7 @@ class MainPGAPTest extends MainPGAP {
 	void test9() {
 		String[] lines = {
 				"10 3",
-				"..#..#..#."
+				"..H..H..H." // Changed from "..#..#..#."
 		};
 		int answer = 9;
 		assertEquals(answer, MainPGAP.execution(lines));
@@ -113,7 +113,7 @@ class MainPGAPTest extends MainPGAP {
 	void test11() {
 		String[] lines = {
 				"10000000 10000000",
-				"#".repeat(10000000)
+				"H".repeat(10000000) // Changed from "#".repeat(10000000)
 		};
 		int answer = 10000000;
 		long start = System.currentTimeMillis();
@@ -126,7 +126,7 @@ class MainPGAPTest extends MainPGAP {
 	void test12() {
 		String[] lines = {
 				"10000000 500",
-				".#..".repeat(2500000)
+				".H..".repeat(2500000) // Changed from ".#..".repeat(2500000)
 		};
 		int answer = 2501500;
 		long start = System.currentTimeMillis();
@@ -139,7 +139,7 @@ class MainPGAPTest extends MainPGAP {
 	void test13() {
 		String[] lines = {
 				"10000000 2500000",
-				".##.".repeat(2500000)
+				".HH.".repeat(2500000) // Changed from ".##.".repeat(2500000)
 		};
 		int answer = 9999999;
 		long start = System.currentTimeMillis();
@@ -152,7 +152,7 @@ class MainPGAPTest extends MainPGAP {
 	void test14() {
 		String[] lines = {
 				"10000000 2500000",
-				".#.#".repeat(2500000)
+				".H.H".repeat(2500000) // Changed from ".#.#".repeat(2500000)
 		};
 		int answer = 7500000;
 		long start = System.currentTimeMillis();
@@ -165,7 +165,7 @@ class MainPGAPTest extends MainPGAP {
 	void test15() {
 		String[] lines = {
 				"10000000 1999999",
-				"..##.".repeat(2000000)
+				"..HH.".repeat(2000000) // Changed from "..##.".repeat(2000000)
 		};
 		int answer = 9999997;
 		long start = System.currentTimeMillis();
@@ -178,7 +178,7 @@ class MainPGAPTest extends MainPGAP {
 	void test16() {
 		String[] lines = {
 				"10000000 2000000",
-				"..##.".repeat(2000000)
+				"..HH.".repeat(2000000) // Changed from "..##.".repeat(2000000)
 		};
 		int answer = 9999999;
 		long start = System.currentTimeMillis();
@@ -191,7 +191,7 @@ class MainPGAPTest extends MainPGAP {
 	void test17() {
 		String[] lines = {
 				"10000000 2000001",
-				"..##.".repeat(2000000)
+				"..HH.".repeat(2000000) // Changed from "..##.".repeat(2000000)
 		};
 		int answer = 10000000;
 		long start = System.currentTimeMillis();
